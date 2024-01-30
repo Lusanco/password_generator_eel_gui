@@ -38,3 +38,7 @@ python orig_passw_gen.py
 ## Usage
 
 Choose the script that best fits your password generation needs. Execute the script in the terminal and follow the prompts to customize the generated password.
+
+## Disclaimer
+
+**Note:** I am not responsible for the use of these scripts. They are provided as-is, with no guarantee of their suitability for any specific purpose. Use them responsibly and at your own risk.
