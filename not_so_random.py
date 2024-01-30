@@ -2,28 +2,41 @@ import random
 import string
 
 
-def generate_password(minimum_length, numbers=True, special_characters=True):
-    minimum_length = max(minimum_length, 2)
-    upper_letters = string.ascii_uppercase
-    lower_letters = string.ascii_lowercase
-    digits = string.digits
-    special = ["!", "@", "#", "$", "%", "^", "&", "*"]
+def generate_password():
+    password_set = set()  # Update after conditionals
+    newpword_set = set()  # Update after conditionals
 
-    password = random.choice(upper_letters)
+    # String ASCII & Digit + custom string_speci Variables
+    string_upper = string.ascii_uppercase
+    string_lower = string.ascii_lowercase
+    string_digit = string.digits
+    string_speci = ["!", "@", "#", "$", "%", "^", "&", "*"]
 
+    # Random Choice Variables
+    upper_chars = random.choice(string_upper)
+    speci_chars = random.choice(string_speci)
+    lower_chars = ""  # Update on conditional
+    numbr_chars = ""  # Update on conditional
+    randm_passw = ""  # Update on conditional
+
+    # Conditionals for lower_chars, numbr_chars, randm_passw
     for _ in range(0, 3):
-        password += random.choice(lower_letters)
-
+        lower_chars += random.choice(string_lower)
     for _ in range(0, 4):
-        password += random.choice(digits)
+        numbr_chars += random.choice(string_digit)
 
-    password += random.choice(special)
+    # Saving generated values, separated in a Tupple
+    password_set.add = (upper_chars, speci_chars, lower_chars, numbr_chars)
 
-    return password
+    for _ in range(0, len(password_set)):
+        while len(newpword_set) != len(password_set):
+            newpword_set.update(password_set[_])
+
+    # if isinstance(passw_list[0], str):
+    #     randm_passw = random.choice(passw_list)
+
+    print(newpword_set)
+    return newpword_set
 
 
-minimum_length = int(input("Enter the minimum length: "))
-has_digit = input("Do you want to have numbers (y/n)? ").lower() == "y"
-has_special = input("Do you want to have special characters (y/n)? ").lower() == "y"
-password = generate_password(minimum_length, has_digit, has_special)
-print(password)
+generate_password()
