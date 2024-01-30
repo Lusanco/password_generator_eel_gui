@@ -3,6 +3,7 @@ import string
 
 
 def generate_password():
+    # List and Set Variables for randm_passw print
     password_set = {}  # Update after conditionals
     password_list = []  # Update after conditionals
 
