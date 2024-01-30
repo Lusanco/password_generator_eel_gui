@@ -34,7 +34,7 @@ def generate_password():
     for _ in range(0, len(password_list)):
         randm_passw += password_list[_]
 
-    print(randm_passw)
+    print(f"\nYour generated password is: {randm_passw}\n")
     return randm_passw
 
 
