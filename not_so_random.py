@@ -3,8 +3,8 @@ import string
 
 
 def generate_password():
-    password_set = set()  # Update after conditionals
-    newpword_set = set()  # Update after conditionals
+    password_set = {}  # Update after conditionals
+    password_list = []  # Update after conditionals
 
     # String ASCII & Digit + custom string_speci Variables
     string_upper = string.ascii_uppercase
@@ -25,18 +25,17 @@ def generate_password():
     for _ in range(0, 4):
         numbr_chars += random.choice(string_digit)
 
-    # Saving generated values, separated in a Tupple
-    password_set.add = (upper_chars, speci_chars, lower_chars, numbr_chars)
+    # Saving generated values, separated in a Set
+    password_set = {upper_chars, speci_chars, lower_chars, numbr_chars}
 
-    for _ in range(0, len(password_set)):
-        while len(newpword_set) != len(password_set):
-            newpword_set.update(password_set[_])
+    # Converting generated values, seperated in a List
+    password_list = list(password_set)
 
-    # if isinstance(passw_list[0], str):
-    #     randm_passw = random.choice(passw_list)
+    for _ in range(0, len(password_list)):
+        randm_passw += password_list[_]
 
-    print(newpword_set)
-    return newpword_set
+    print(randm_passw)
+    return randm_passw
 
 
 generate_password()
