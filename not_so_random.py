@@ -11,10 +11,10 @@ def generate_password(minimum_length, numbers=True, special_characters=True):
 
     password = random.choice(upper_letters)
 
-    for _ in range(0, int(minimum_length / 2 - 1)):
+    for _ in range(0, int(minimum_length - 7)):
         password += random.choice(lower_letters)
 
-    for _ in range(0, int(minimum_length / 2 - 1)):
+    for _ in range(0, 4):
         password += random.choice(digits)
 
     password += random.choice(special)
