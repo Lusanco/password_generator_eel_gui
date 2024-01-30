@@ -7,11 +7,11 @@ def generate_password(minimum_length, numbers=True, special_characters=True):
     upper_letters = string.ascii_uppercase
     lower_letters = string.ascii_lowercase
     digits = string.digits
-    special = string.punctuation
+    special = ["!", "@", "#", "$", "%", "^", "&", "*"]
 
     password = random.choice(upper_letters)
 
-    for _ in range(0, int(minimum_length - 7)):
+    for _ in range(0, 3):
         password += random.choice(lower_letters)
 
     for _ in range(0, 4):
