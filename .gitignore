@@ -1,1 +1,4 @@
 eel_venv
+node_modules
+/web/input.css
+/web/output.css

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+  "dev": "python3 main.py && npx tailwindcss -i ./web/input.css -o ./web/output.css --watch",
+  "build": "npx tailwindcss -o ./web/build.css --minify"
+},
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
