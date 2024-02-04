@@ -1,6 +1,10 @@
-# Password Generator
+# Password Generator Eel GUI (WIP)
 
-This repository contains two Python scripts for generating random passwords: `not_so_rnd_gen.py` and `orig_passw_gen.py`.
+Project and README.md under construction.
+
+This repository contains two Python scripts for generating random passwords: `not_so_rnd_gen.py` and `orig_passw_gen.py`. Also, it will have a Eel Graphical User Interface.
+
+Below imported non GUI scripts description. 
 
 ## not_so_rnd_gen.py
 
